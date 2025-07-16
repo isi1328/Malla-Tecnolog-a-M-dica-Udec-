@@ -1,1 +1,41 @@
+/* styles.css */
 
+#malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ramo {
+  width: 120px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estados de los ramos */
+.no-aprobado {
+  background-color: pink;
+  color: black;
+  text-decoration: none;
+  text-decoration-thickness: initial;
+}
+
+.aprobado {
+  background-color: purple;
+  color: white;
+  text-decoration: line-through;
+}
+
+.bloqueado {
+  background-color: gray;
+  color: #ccc;
+  cursor: not-allowed;
+}
